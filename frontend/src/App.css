@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.submit:disabled {
+  opacity: 0.3;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* .hospitalList {
+
+} */
+
+.hospitalName {
+  font-weight: bold;
+}
+
+.prevord {
+  display: inline;
+}

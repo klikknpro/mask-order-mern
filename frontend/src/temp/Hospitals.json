@@ -1,0 +1,323 @@
+
+   [
+    {
+      "id": 1746900936,
+      "name": "Karolinska University Hospital",
+      "address": {
+        "country_code": "SE",
+        "post_code": "17164",
+        "city": "Solna",
+        "address": "Anna Steckséns gata 41"
+      },
+      "emails": [],
+      "taxcode": "SE202100297301",
+      "iban": "",
+      "swift": "",
+      "account_number": "--",
+      "phone": "",
+      "general_ledger_number": "",
+      "tax_type": "FOREIGN",
+      "custom_billing_settings": {
+        "payment_method": null,
+        "document_form": null,
+        "due_days": 15,
+        "document_currency": null,
+        "template_language_code": null,
+        "discount": null
+      },
+      "group_member_tax_number": "",
+      "giro_settings": {
+        "giro_default_settings": true,
+        "giro_payment_request_enabled": false,
+        "giro_different_amount_allowed": false
+      }
+    },
+    {
+      "id": 1746900910,
+      "name": "Rigas Austrumu Kliniskas Universitates",
+      "address": {
+        "country_code": "LT",
+        "post_code": "1038",
+        "city": "Riga",
+        "address": "Hipokrata iela 2"
+      },
+      "emails": [],
+      "taxcode": "40003951628",
+      "iban": "",
+      "swift": "",
+      "account_number": "--",
+      "phone": "",
+      "general_ledger_number": "",
+      "tax_type": "FOREIGN",
+      "custom_billing_settings": {
+        "payment_method": null,
+        "document_form": null,
+        "due_days": 15,
+        "document_currency": null,
+        "template_language_code": null,
+        "discount": null
+      },
+      "group_member_tax_number": "",
+      "giro_settings": {
+        "giro_default_settings": true,
+        "giro_payment_request_enabled": false,
+        "giro_different_amount_allowed": false
+      }
+    },
+    {
+      "id": 1746900856,
+      "name": "The University Hospital of Ludwig Maximilian University of Munich",
+      "address": {
+        "country_code": "DE",
+        "post_code": "80539",
+        "city": "München",
+        "address": "Geschwister-Scholl-Platz 1"
+      },
+      "emails": [],
+      "taxcode": "",
+      "iban": "",
+      "swift": "",
+      "account_number": "--",
+      "phone": "",
+      "general_ledger_number": "",
+      "tax_type": "FOREIGN",
+      "custom_billing_settings": {
+        "payment_method": null,
+        "document_form": null,
+        "due_days": 15,
+        "document_currency": null,
+        "template_language_code": null,
+        "discount": null
+      },
+      "group_member_tax_number": "",
+      "giro_settings": {
+        "giro_default_settings": true,
+        "giro_payment_request_enabled": false,
+        "giro_different_amount_allowed": false
+      }
+    },
+    {
+      "id": 1746900593,
+      "name": "The University Hospital Duesseldorf",
+      "address": {
+        "country_code": "DE",
+        "post_code": "40225",
+        "city": "Düsseldorf",
+        "address": "Moorenstraße 5"
+      },
+      "emails": [],
+      "taxcode": "DE811222416",
+      "iban": "",
+      "swift": "",
+      "account_number": "--",
+      "phone": "",
+      "general_ledger_number": "",
+      "tax_type": "FOREIGN",
+      "custom_billing_settings": {
+        "payment_method": null,
+        "document_form": null,
+        "due_days": 15,
+        "document_currency": null,
+        "template_language_code": null,
+        "discount": null
+      },
+      "group_member_tax_number": "",
+      "giro_settings": {
+        "giro_default_settings": true,
+        "giro_payment_request_enabled": false,
+        "giro_different_amount_allowed": false
+      }
+    },
+    {
+      "id": 1746900528,
+      "name": "The Helios Hospital Berlin-Buch",
+      "address": {
+        "country_code": "DE",
+        "post_code": "13125",
+        "city": "Berlin",
+        "address": "Schwanebecker Ch 50"
+      },
+      "emails": [],
+      "taxcode": "DE291053519",
+      "iban": "",
+      "swift": "",
+      "account_number": "--",
+      "phone": "",
+      "general_ledger_number": "",
+      "tax_type": "FOREIGN",
+      "custom_billing_settings": {
+        "payment_method": null,
+        "document_form": null,
+        "due_days": 15,
+        "document_currency": null,
+        "template_language_code": null,
+        "discount": null
+      },
+      "group_member_tax_number": "",
+      "giro_settings": {
+        "giro_default_settings": true,
+        "giro_payment_request_enabled": false,
+        "giro_different_amount_allowed": false
+      }
+    },
+    {
+      "id": 1746900482,
+      "name": "Fővárosi Önkormányzat Heim Pál Gyermekkórház",
+      "address": {
+        "country_code": "HU",
+        "post_code": "1089",
+        "city": "Budapest",
+        "address": "Üllői út 86"
+      },
+      "emails": [],
+      "taxcode": "15490335-2-42",
+      "iban": "",
+      "swift": "",
+      "account_number": "--",
+      "phone": "",
+      "general_ledger_number": "",
+      "tax_type": "HAS_TAX_NUMBER",
+      "custom_billing_settings": {
+        "payment_method": null,
+        "document_form": null,
+        "due_days": 15,
+        "document_currency": null,
+        "template_language_code": null,
+        "discount": null
+      },
+      "group_member_tax_number": "",
+      "giro_settings": {
+        "giro_default_settings": true,
+        "giro_payment_request_enabled": false,
+        "giro_different_amount_allowed": false
+      }
+    },
+    {
+      "id": 1746900468,
+      "name": "Markhot Ferenc Oktatókórház és Rendelőintézet",
+      "address": {
+        "country_code": "HU",
+        "post_code": "3300",
+        "city": "Eger",
+        "address": "Markhót Ferenc utca 1"
+      },
+      "emails": [],
+      "taxcode": "15813839-2-10",
+      "iban": "",
+      "swift": "",
+      "account_number": "--",
+      "phone": "",
+      "general_ledger_number": "",
+      "tax_type": "HAS_TAX_NUMBER",
+      "custom_billing_settings": {
+        "payment_method": null,
+        "document_form": null,
+        "due_days": 15,
+        "document_currency": null,
+        "template_language_code": null,
+        "discount": null
+      },
+      "group_member_tax_number": "",
+      "giro_settings": {
+        "giro_default_settings": true,
+        "giro_payment_request_enabled": false,
+        "giro_different_amount_allowed": false
+      }
+    },
+    {
+      "id": 1746900425,
+      "name": "Szent Pantaleon Kórház Kht.",
+      "address": {
+        "country_code": "HU",
+        "post_code": "2400",
+        "city": "Dunaújváros",
+        "address": "Korányi Sándor utca 4-6"
+      },
+      "emails": [],
+      "taxcode": "15791942-2-07",
+      "iban": "",
+      "swift": "",
+      "account_number": "--",
+      "phone": "",
+      "general_ledger_number": "",
+      "tax_type": "HAS_TAX_NUMBER",
+      "custom_billing_settings": {
+        "payment_method": null,
+        "document_form": null,
+        "due_days": 15,
+        "document_currency": null,
+        "template_language_code": null,
+        "discount": null
+      },
+      "group_member_tax_number": "",
+      "giro_settings": {
+        "giro_default_settings": true,
+        "giro_payment_request_enabled": false,
+        "giro_different_amount_allowed": false
+      }
+    },
+    {
+      "id": 1746900298,
+      "name": "Miskolci Semmelweis Ignác Egészségügyi Központ és Egyetemi Oktatókórház",
+      "address": {
+        "country_code": "HU",
+        "post_code": "3529",
+        "city": "Miskolc",
+        "address": "Csabai kapu 9-11"
+      },
+      "emails": [],
+      "taxcode": "14635306-2-05",
+      "iban": "",
+      "swift": "",
+      "account_number": "--",
+      "phone": "",
+      "general_ledger_number": "",
+      "tax_type": "HAS_TAX_NUMBER",
+      "custom_billing_settings": {
+        "payment_method": null,
+        "document_form": null,
+        "due_days": 15,
+        "document_currency": null,
+        "template_language_code": null,
+        "discount": null
+      },
+      "group_member_tax_number": "",
+      "giro_settings": {
+        "giro_default_settings": true,
+        "giro_payment_request_enabled": false,
+        "giro_different_amount_allowed": false
+      }
+    },
+    {
+      "id": 1746838783,
+      "name": "Pécsi Irgalmasrendi Kórház",
+      "address": {
+        "country_code": "HU",
+        "post_code": "7621",
+        "city": "Pécs",
+        "address": "Széchenyi tér 5."
+      },
+      "emails": [],
+      "taxcode": "18330247-2-02",
+      "iban": "",
+      "swift": "",
+      "account_number": "--",
+      "phone": "",
+      "general_ledger_number": "",
+      "tax_type": "HAS_TAX_NUMBER",
+      "custom_billing_settings": {
+        "payment_method": null,
+        "document_form": null,
+        "due_days": 15,
+        "document_currency": null,
+        "template_language_code": null,
+        "discount": null
+      },
+      "group_member_tax_number": "",
+      "giro_settings": {
+        "giro_default_settings": true,
+        "giro_payment_request_enabled": false,
+        "giro_different_amount_allowed": false
+      }
+    }
+  ]
