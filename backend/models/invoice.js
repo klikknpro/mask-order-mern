@@ -11,7 +11,7 @@ const invoiceSchema = new mongoose.Schema({
     id: Number,
     name: String,
   },
-  items: { id: Number, name: String, quantity: Number },
+  items: [{ id: Number, name: String, quantity: Number }],
   comment: String,
 });
 const Invoice = mongoose.model("Invoice", invoiceSchema);
