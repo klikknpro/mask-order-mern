@@ -1,14 +1,8 @@
 const router = require("express").Router();
-const Hospital = require("../models/hospital");
+const { queryAllHospitals, queryHospitalsById } = require("../controllers/controller");
 
 // get hospitals from MongoDB
-router.get("/all", async (req, res) => {
-  try {
-    const response = await Hospital.find();
-    return res.status(200).json(response);
-  } catch (err) {
-    return res.status(400).json("Error:" + err);
-  }
-});
+router.get("/all", queryAllHospitals);
+router.get("/id/:id", queryHospitalsById);
 
 module.exports = router;

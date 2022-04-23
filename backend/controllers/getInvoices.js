@@ -1,6 +1,5 @@
 require("dotenv").config();
 const http = require("axios").default;
-const Invoice = require("../models/invoice");
 
 const getInvoices = async () => {
   try {
@@ -10,10 +9,7 @@ const getInvoices = async () => {
       },
     });
     const invoicesBillingo = response.data.data;
-    Invoice.collection.insertMany(invoicesBillingo, function (err, docs) {
-      if (err) console.log(err);
-      console.log("invoices inserted");
-    });
+    return invoicesBillingo;
   } catch (error) {
     console.error(error);
   }

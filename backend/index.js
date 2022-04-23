@@ -9,7 +9,7 @@ const port = process.env.PORT;
 const getPartners = require("./controllers/getPartners");
 const getInvoices = require("./controllers/getInvoices");
 //controllers
-const { insertHospitals } = require("./controllers/controller");
+const { insertHospitals, insertInvoices } = require("./controllers/controller");
 
 // routes
 const partnerRouter = require("./routes/hospital");
@@ -38,7 +38,7 @@ mongoose.connection
 
 // fetch hospitals from billingo and upload to MongoDB
 getPartners().then((data) => insertHospitals(data));
-getInvoices();
+getInvoices().then((data) => insertInvoices(data));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
