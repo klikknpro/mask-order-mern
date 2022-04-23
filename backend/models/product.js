@@ -58,3 +58,19 @@ product lekerve a billingo-rol
 "purchase_price": 80
 }
 */
+
+/*
+to create a product
+
+{
+  "name": "string",
+  "comment": "string",
+  "currency": "AED",
+  "vat": "0%",
+  "net_unit_price": 0,
+  "unit": "string",
+  "general_ledger_number": "string",
+  "general_ledger_taxcode": "string",
+  "entitlement": "AAM"
+}
+*/

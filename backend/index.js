@@ -5,13 +5,11 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const port = process.env.PORT;
 
-// controllers
-const getPartners = require("./controller/getPartners");
-const getInvoices = require("./controller/getInvoices");
-
-// models
-const Hospital = require("./models/hospital");
-const Invoice = require("./models/invoice");
+// fetch Billingo database
+const getPartners = require("./controllers/getPartners");
+const getInvoices = require("./controllers/getInvoices");
+//controllers
+const { insertHospitals } = require("./controllers/controller");
 
 // routes
 const partnerRouter = require("./routes/hospital");
@@ -19,25 +17,27 @@ const orderRouter = require("./routes/order");
 
 app.use(cors());
 app.use(express.json());
-
+// mountpoints
 app.use("/api/partners", partnerRouter);
 app.use("/api/orders", orderRouter);
 
 mongoose
   .connect(process.env.CONNECTION_STRING)
-  .then(() => console.log("connected"))
+  .then(() => console.log("MongoDB connected"))
   .catch((error) => console.log(error));
 
-// empty collection
-Hospital.deleteMany({}, function () {
-  console.log("Hospital documents deleted");
-});
-Invoice.deleteMany({}, function () {
-  console.log("Invoice documents deleted");
-});
+// drop collections
+mongoose.connection
+  .dropCollection("hospitals")
+  .then(() => console.log("hospitals collection deleted"))
+  .catch(() => console.log("hospitals not found"));
+mongoose.connection
+  .dropCollection("invoices")
+  .then(() => console.log("invoices collection deleted"))
+  .catch(() => console.log("invoices not found"));
 
 // fetch hospitals from billingo and upload to MongoDB
-getPartners();
+getPartners().then((data) => insertHospitals(data));
 getInvoices();
 
 app.listen(port, () => {

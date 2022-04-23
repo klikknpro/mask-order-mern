@@ -12,7 +12,7 @@ const getInvoices = async () => {
     const invoicesBillingo = response.data.data;
     Invoice.collection.insertMany(invoicesBillingo, function (err, docs) {
       if (err) console.log(err);
-      console.log("Multiple documents inserted into invoices collection");
+      console.log("invoices inserted");
     });
   } catch (error) {
     console.error(error);

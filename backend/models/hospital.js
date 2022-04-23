@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const hospitalSchema = new mongoose.Schema({
+  billingo_id: Number,
   name: String,
   address: {
     country_code: String,
@@ -14,20 +15,7 @@ const hospitalSchema = new mongoose.Schema({
   swift: String,
   account_number: String,
   phone: String,
-  general_ledger_number: String,
   tax_type: String,
-  custom_billing_settings: {
-    payment_method: String,
-    document_form: String,
-    due_days: Number,
-    document_currency: String,
-    template_language_code: String,
-    discount: {
-      type: String,
-      value: Number,
-    },
-  },
-  group_member_tax_number: String,
 });
 
 const Hospital = mongoose.model("Hospital", hospitalSchema);
