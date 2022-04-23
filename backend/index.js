@@ -19,7 +19,7 @@ app.use(cors());
 app.use(express.json());
 // mountpoints
 app.use("/api/partners", partnerRouter);
-app.use("/api/orders", orderRouter);
+app.use("/api/invoices", orderRouter);
 
 mongoose
   .connect(process.env.CONNECTION_STRING)

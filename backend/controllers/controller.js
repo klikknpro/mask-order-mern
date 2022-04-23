@@ -1,3 +1,4 @@
+const http = require("axios");
 const Hospital = require("../models/hospital");
 const Invoice = require("../models/invoice");
 
@@ -69,10 +70,42 @@ const queryHospitalsById = async (req, res) => {
   }
 };
 
+const queryAllInvoices = async (req, res) => {
+  try {
+    const response = await Invoice.find();
+    return res.status(200).json(response);
+  } catch (err) {
+    return res.status(400).json("Error:" + err);
+  }
+};
+
+const queryInvoicesById = async (req, res) => {
+  const id = req.params.id;
+  try {
+    const query = await Invoice.find({ billingo_id: id });
+    return res.status(200).json(query);
+  } catch (err) {
+    return res.status(400).json("Error:" + err);
+  }
+};
+
+const queryInvoicesByPartner = async (req, res) => {
+  const id = req.params.id;
+  try {
+    const query = await Invoice.find({ "partner.id": id });
+    return res.status(200).json(query);
+  } catch (err) {
+    return res.status(400).json("Error:" + err);
+  }
+};
+
 exports.insertHospitals = insertHospitals;
 exports.insertInvoices = insertInvoices;
 exports.queryAllHospitals = queryAllHospitals;
 exports.queryHospitalsById = queryHospitalsById;
+exports.queryAllInvoices = queryAllInvoices;
+exports.queryInvoicesById = queryInvoicesById;
+exports.queryInvoicesByPartner = queryInvoicesByPartner;
 
 /*
 

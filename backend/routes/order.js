@@ -1,27 +1,21 @@
 const router = require("express").Router();
-const http = require("axios");
-const Invoice = require("../models/invoice");
+const { queryAllInvoices, queryInvoicesById, queryInvoicesByPartner } = require("../controllers/controller");
 
 // get all invoices from MongoDB
-router.get("/all", async (req, res) => {
-  try {
-    const response = await Invoice.find();
-    return res.status(200).json(response);
-  } catch (err) {
-    return res.status(400).json("Error:" + err);
-  }
-});
+router.get("/all", queryAllInvoices);
+router.get("/id/:id", queryInvoicesById);
+router.get("/partner/:id", queryInvoicesByPartner);
 
 // find invoices based on partner id
-router.get("/all/id", async (req, res) => {
-  const partnerid = req.headers.partnerid;
-  try {
-    const response = await Invoice.find({ "partner.id": partnerid }, "gross_total partner.name invoice_number items");
-    return res.status(200).json(response);
-  } catch (err) {
-    return res.status(400).json("Error:" + err);
-  }
-});
+// router.get("/all/id", async (req, res) => {
+//   const partnerid = req.headers.partnerid;
+//   try {
+//     const response = await Invoice.find({ "partner.id": partnerid }, "gross_total partner.name invoice_number items");
+//     return res.status(200).json(response);
+//   } catch (err) {
+//     return res.status(400).json("Error:" + err);
+//   }
+// });
 
 // receiving a post request from the Front-End
 router.post("/new_order", async (req, res) => {
